@@ -1,4 +1,7 @@
-<?php include 'head.php'; ?>
+<?php
+$currentPage ='index'; 
+include 'head.php';
+?>
 
     <div class="page-header" align="center">
         <img src="img/logo-musica.png" align="center" class="img-responsive" alt="Responsive image">

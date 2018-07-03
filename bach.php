@@ -1,11 +1,17 @@
-<?php include 'head.php'; ?>
+<?php 
+$currentPage ='bach';
+include 'head.php';
+?>
 
     <div class="page-header" align="center">
         <img src="img/logo-musica.png" align="center" class="img-responsive" alt="Responsive image">
         <h1>Johann Sebastian Bach<small></small></h1>
     </div>
 
-<?php include 'nav.php'; ?>
+<?php
+
+include 'nav.php';
+?>
 
 <div class="jumbotron">
     <div class="container" align="center">

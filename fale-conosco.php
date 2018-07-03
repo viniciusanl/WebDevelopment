@@ -1,4 +1,7 @@
-<?php include 'head.php'; ?>
+<?php
+$currentPage ='logar';
+include 'head.php';
+?>
 
     <div class="page-header" align="center">
         <img src="img/logo-musica.png" align="center">
@@ -31,7 +34,7 @@
 		    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
 			    Enviar dados
 		    </button>
-	        <a href="fale-conosco.php"> Cancelar</a>
+	        <a href="entretenimento.php"> Cancelar</a>
             </div>
 		</form>
 	</div>

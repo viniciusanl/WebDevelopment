@@ -1,4 +1,7 @@
-<?php include('head.php'); ?>
+<?php
+$currentPage ='logar';
+include('head.php');
+?>
 
 <div class="container">
     <div class="row vertical-offset-100">

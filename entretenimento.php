@@ -1,6 +1,6 @@
 <?php
+$currentPage ='logar';
 require_once('verificasessao.php');
-
 ?>
 
 <?php include('head.php'); ?>
