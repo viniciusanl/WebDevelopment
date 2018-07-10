@@ -1,5 +1,5 @@
 <?php
-$currentPage ='logar';
+$currentPage = 'logar';
 require_once('verificasessao.php');
 ?>
 
@@ -30,17 +30,17 @@ echo "		</tr>";
 echo "	</thead>";
 echo "<tbody>";
 require_once("conexao.php");
-if (!$conn->connect_error){
+if (!$conn->connect_error) {
 	$sql = "SELECT entretenimento_id, nome, musica FROM entretenimento";
-	$result = mysqli_query($conn,$sql);
+	$result = mysqli_query($conn, $sql);
 	if ($result->num_rows > 0) {
-		while($row = $result->fetch_assoc()) {
-			echo "<tr><td>" . $row["entretenimento_id"]. "</td><td>" . $row["nome"]. " </td><td>" . $row["musica"]. " </td>
+		while ($row = $result->fetch_assoc()) {
+			echo "<tr><td>" . $row["entretenimento_id"] . "</td><td>" . $row["nome"] . " </td><td>" . $row["musica"] . " </td>
 			<td style='text-align: right;'>
-			<a href='cadastro-entretenimento.php?operacao=2&id=" .  $row["entretenimento_id"] . "'><i class='fas fa-edit'></i></a>
+			<a href='cadastro-entretenimento.php?operacao=2&id=" . $row["entretenimento_id"] . "'><i class='fas fa-edit'></i></a>
 			</td>
 			<td style='text-align: right;'>
-			<a href='delete-entretenimento.php?id=" .  $row["entretenimento_id"] . "'><i style='color: red;' class='fas fa-trash'></i></a>
+			<a href='delete-entretenimento.php?id=" . $row["entretenimento_id"] . "'><i style='color: red;' class='fas fa-trash'></i></a>
 			</td>
 			</tr>";
 		}

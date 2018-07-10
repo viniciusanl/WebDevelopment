@@ -1,5 +1,5 @@
 <?php
-$currentPage ='logar';
+$currentPage = 'logar';
 include 'head.php';
 ?>
 

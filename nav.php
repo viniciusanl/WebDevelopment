@@ -75,28 +75,48 @@
 		<div class="container" id="navbarTogglerDemo02">
 			<ul class="nav nav-pills mr-auto mt-2 mt-lg-0">
                                 
-				<li <?php if ($currentPage == "bach"){echo "class='nav-item active'";}else{echo "class='nav-item'";}?>>
-					<a class="nav-link" href="bach.php">Johann Sebastian Bach</a>
-				</li>
-				<li <?php if ($currentPage == "beethoven"){echo "class='nav-item active'";}else{echo "class='nav-item'";}?>>
-					<a class="nav-link" href="beethoven.php">Ludwig van Beethoven</a>
-				</li>
-				<li <?php if ($currentPage == "chopin"){echo "class='nav-item active'";}else{echo "class='nav-item'";}?>>
-					<a class="nav-link" href="chopin.php">Frédéric Chopin</a>
-				</li>
-				<li <?php if ($currentPage == "mozart"){echo "class='nav-item active'";}else{echo "class='nav-item'";}?>>
-					<a class="nav-link" href="mozart.php">Wolfgang Amadeus Mozart</a>
-				</li>
-                                <li <?php if ($currentPage == "logar"){echo "class='nav-item active'";}else{echo "class='nav-item'";}?>>
-					<a class="nav-link" href="logar.php">Entretenimento</a>
-				</li>
+				<li <?php if ($currentPage == "bach") {
+                echo "class='nav-item active'";
+        } else {
+                echo "class='nav-item'";
+        } ?>>
+		<a class="nav-link" href="bach.php">Johann Sebastian Bach</a>
+	</li>
+	<li <?php if ($currentPage == "beethoven") {
+                echo "class='nav-item active'";
+        } else {
+                echo "class='nav-item'";
+        } ?>>
+		<a class="nav-link" href="beethoven.php">Ludwig van Beethoven</a>
+		</li>
+	        <li <?php if ($currentPage == "chopin") {
+                        echo "class='nav-item active'";
+                } else {
+                        echo "class='nav-item'";
+                } ?>>
+		<a class="nav-link" href="chopin.php">Frédéric Chopin</a>
+		</li>
+		<li <?php if ($currentPage == "mozart") {
+                echo "class='nav-item active'";
+        } else {
+                echo "class='nav-item'";
+        } ?>>
+	<a class="nav-link" href="mozart.php">Wolfgang Amadeus Mozart</a>
+        </li>
+        <li <?php if ($currentPage == "logar") {
+                        echo "class='nav-item active'";
+                } else {
+                        echo "class='nav-item'";
+                } ?>>
+	<a class="nav-link" href="logar.php">Entretenimento</a>
+	</li>
                                 
-			</ul>
+	</ul>
 
-			<div class="mr-auto mt-2 mt-lg-0">
-				<p><?php //echo $_SESSION['nomeusu'];?></p>
-			</div>
-			<a class="nav-link btn btn-danger" href="fechar.php">Sair</a>
+	<div class="mr-auto mt-2 mt-lg-0">
+		<p><?php //echo $_SESSION['nomeusu'];?></p>
+	</div>
+	<a class="nav-link btn btn-danger" href="fechar.php">Sair</a>
 
-		</div>
+	</div>
 	</nav>
